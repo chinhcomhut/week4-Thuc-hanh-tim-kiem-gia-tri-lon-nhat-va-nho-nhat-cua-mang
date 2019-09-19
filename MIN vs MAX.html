@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THUC HANH</title>
+</head>
+<body>
+<script>
+    function findMin(arr) {
+        let min = arr[0];
+        for(let i=1;i<arr.length;++i){
+            if(arr[i]<min){
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+    let arr = [];
+    for(let i=0;i<100;++i){
+        arr[i]=Math.floor(Math.random()*101);
+    }
+    let minValue = findMin(arr);
+    function  findMax(arr) {
+        let max=arr[0];
+        for(let i=0;i<arr.length;++i){
+            if(arr[i]>max){
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+    // disArr(arr);
+    // document.write("<br/>");
+    // document.write("The minium value is:"+minValue);
+</script>
+</body>
+</html>
